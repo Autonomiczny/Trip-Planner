@@ -1,5 +1,7 @@
 # Trip Planner Project Plan
 
+SonarCloud analysis: [text](https://sonarcloud.io/project/overview?id=Autonomiczny_Trip-Planner)
+
 ## 1. Project Overview
 A comprehensive trip planning application that combines frontend development with DevOps practices and AI integration.
 
