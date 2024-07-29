@@ -37,7 +37,10 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-  # Build job
+        with:
+          args: >
+            -Dsonar.projectKey=Autonomiczny_Trip-Planner
+            -Dsonar.organization=autonomiczny
   build:
     runs-on: ubuntu-latest
     steps:
