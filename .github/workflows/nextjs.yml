@@ -41,6 +41,16 @@ jobs:
           args: >
             -Dsonar.projectKey=Autonomiczny_Trip-Planner
             -Dsonar.organization=autonomiczny
+
+  dependency-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v3     
+               
   build:
     runs-on: ubuntu-latest
     steps:
